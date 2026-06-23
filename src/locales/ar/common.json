@@ -1,0 +1,55 @@
+{
+  "common": {
+    "brand": "بريفيت كير",
+    "knowMore": "اعرف المزيد",
+    "availableNow": "متوفر الآن",
+    "appStore": "متجر App Store",
+    "playStore": "متجر Play Store",
+    "bookNow": "احجز الآن",
+    "ourServices": "خدماتنا",
+    "learnMore": "تعرّف أكثر"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "prices": "الأسعار",
+    "services": "الخدمات",
+    "about": "من نحن",
+    "help": "المساعدة",
+    "bookPickup": "احجز استلام",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
+  },
+  "footer": {
+    "tagline": "بريفيت كير للغسيل — حيث يُغسل كل قطعة بشكل منفصل بدقة وخصوصية وعناية فاخرة.",
+    "quickLinks": "روابط سريعة",
+    "servicesTitle": "الخدمات",
+    "contactTitle": "تواصل معنا",
+    "quickLinksList": {
+      "services": "الخدمات",
+      "howItWorks": "كيف يعمل",
+      "reviews": "التقييمات",
+      "downloadApp": "تحميل التطبيق"
+    },
+    "servicesList": {
+      "washFold": "غسيل وطي",
+      "dryCleaning": "تنظيف جاف",
+      "ironing": "كيّ",
+      "express": "خدمة سريعة"
+    },
+    "contact": {
+      "location": "دبي، الإمارات",
+      "phone": "+971 4 123 4567",
+      "email": "hello@PCL.com"
+    },
+    "links": {
+      "privacy": "سياسة الخصوصية",
+      "terms": "الشروط والأحكام"
+    },
+    "copyright": "© {year} بريفيت كير للغسيل. جميع الحقوق محفوظة."
+  },
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "switch": "اللغة"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Prices — Private Care Laundry",
+  "description": "Transparent pricing for premium laundry services in the UAE.",
+  "hero": {
+    "title": "Prices",
+    "subtitle": "Simple upfront prices for each service."
+  },
+  "filters": {
+    "all": "All",
+    "men": "Men",
+    "women": "Women",
+    "children": "Children"
+  },
+  "categories": {
+    "cleanPress": { "title": "Clean & Press" },
+    "washFold": { "title": "Wash & Fold" },
+    "pressOnly": { "title": "Press Only" },
+    "shoeCleaning": { "title": "Shoe Cleaning" },
+    "bagsCleaning": { "title": "Bags Cleaning" },
+    "homeItems": { "title": "Home Items" },
+    "carpetCleaning": { "title": "Carpet Cleaning" },
+    "savingBags": { "title": "Saving Bags" }
+  }
+}

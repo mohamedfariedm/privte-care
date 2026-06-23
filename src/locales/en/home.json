@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Private Care Laundry — Special Care for Every Garment",
+      "description": "Premium laundry service with separate washing for each customer. Free pickup, 24h turnaround, and real-time tracking in the UAE."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Special Care for Every Garment.",
+      "subtitle": "Separate Washing For Each Customer.",
+      "primaryCta": "Download App",
+      "secondaryCta": "How It Works"
+    },
+    "appPromo": {
+      "title": "First pick up for free.",
+      "description": "Download the app now and get free pickup, delivery, and 20% off your first order."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Every request is handled with utmost care and individually, to ensure the highest levels of privacy.",
+      "items": {
+        "savingBags": {
+          "title": "Saving Bags",
+          "description": "Fill a bag with up to 15 items for one fixed price — save more with bulk laundry"
+        },
+        "clothesWashing": {
+          "title": "Cloths Washing",
+          "description": "Professional care for your everyday wear — fresh, clean, and ready to go"
+        },
+        "shoeCleaning": {
+          "title": "Shoe Cleaning",
+          "description": "Deep cleaning that restores your shoes — careful treatment for every material"
+        },
+        "bagsCleaning": {
+          "title": "Bags Cleaning",
+          "description": "Expert care for handbags and travel bags — clean, polished, and elegant"
+        },
+        "carpetCleaning": {
+          "title": "Carpet Cleaning",
+          "description": "Removes dust, stains, and odors — brings back freshness and comfort"
+        },
+        "homeItems": {
+          "title": "Home Items",
+          "description": "Cleaning for curtains, blankets, and more — soft, fresh, and spotless"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "description": "Every request is handled with utmost care and individually, to ensure the highest levels of privacy.",
+      "steps": {
+        "schedule": {
+          "title": "Schedule Pickup",
+          "description": "Choose a date and time that works for you through our app or website."
+        },
+        "pickup": {
+          "title": "We Pick Up",
+          "description": "Our driver arrives at your door with laundry bags – no sorting needed."
+        },
+        "clean": {
+          "title": "We Clean",
+          "description": "Every order is washed separately with premium detergents and expert care."
+        },
+        "delivery": {
+          "title": "Delivered Fresh",
+          "description": "Clean, fresh, and perfectly presented – right to your doorstep."
+        }
+      }
+    },
+    "why": {
+      "title": "Why Private Care Laundry",
+      "description": "Private Care Laundry ensures every order is washed separately for complete hygiene and privacy, delivering premium care you can trust.",
+      "items": {
+        "turnaround": {
+          "title": "24h Turnaround",
+          "description": "From pickup to delivery within 24 hours, same-day express also available."
+        },
+        "insured": {
+          "title": "Fully Insured",
+          "description": "Every garment insured up to 500 AED, full responsibility for rare damage."
+        },
+        "tracking": {
+          "title": "Real-Time Tracking",
+          "description": "Track your order from pickup to delivery with accurate real-time updates."
+        },
+        "eco": {
+          "title": "Eco-Friendly",
+          "description": "Biodegradable detergents used with energy-efficient machines for clean care."
+        }
+      }
+    },
+    "testimonials": {
+      "label": "Customer Testimonials",
+      "quote": "\"I really appreciate how straightforward the laundry service is and how quickly their customer support responds. I can't see myself managing without it\"",
+      "author": "Johnny Walker",
+      "role": "App Store Review"
+    },
+    "download": {
+      "title": "Get the Private Care experience.",
+      "description": "Book, track, and enjoy effortless laundry service.",
+      "scanTitle": "Scan to download",
+      "scanSubtitle": "iOS & Android"
+    },
+    "faq": {
+      "title": "Here are a few things you might be wondering.",
+      "items": {
+        "separate": {
+          "question": "Do you wash clothes separately?",
+          "answer": "Yes, every order is washed individually to ensure maximum hygiene, privacy, and care. Simply schedule through the app, and our team will collect and deliver your items at your preferred time."
+        },
+        "pickup": {
+          "question": "How does pickup and delivery work?",
+          "answer": "Schedule a pickup through our app, leave your items ready, and our team will collect and return them cleaned within 24 hours."
+        },
+        "pricing": {
+          "question": "How is pricing calculated?",
+          "answer": "We offer transparent pricing per item, saving bags, and specialty services. View our Prices page or check the app for a detailed quote."
+        },
+        "insurance": {
+          "question": "Are my garments insured?",
+          "answer": "Yes, every garment is insured up to 500 AED. We take full responsibility in the rare event of damage."
+        },
+        "areas": {
+          "question": "Which areas do you serve?",
+          "answer": "We currently serve major areas across the UAE. Enter your address in the app to confirm availability in your location."
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronDown } from "lucide-react";
+import { Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type AccordionItem = {
@@ -14,12 +14,14 @@ type AccordionProps = {
   items: AccordionItem[];
   defaultOpenId?: string;
   className?: string;
+  variant?: "default" | "gold";
 };
 
 export function Accordion({
   items,
   defaultOpenId,
   className,
+  variant = "default",
 }: AccordionProps) {
   const [openId, setOpenId] = React.useState<string | null>(
     defaultOpenId ?? items[0]?.id ?? null,
@@ -45,11 +47,20 @@ export function Accordion({
               </span>
               <span
                 className={cn(
-                  "flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border-muted transition-transform",
-                  isOpen && "rotate-180",
+                  "flex size-11 shrink-0 items-center justify-center rounded-full",
+                  variant === "gold"
+                    ? "bg-button-cta"
+                    : "border border-border-muted-2",
                 )}
               >
-                <ChevronDown className="h-5 w-5" aria-hidden />
+                <Plus
+                  className={cn(
+                    "size-5 transition-transform duration-300",
+                    variant === "gold" ? "text-text-on-primary" : "text-button-cta",
+                    isOpen && "rotate-45",
+                  )}
+                  aria-hidden
+                />
               </span>
             </button>
             <div

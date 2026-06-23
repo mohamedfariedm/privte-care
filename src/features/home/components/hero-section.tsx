@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { HeroBackground } from "@/features/home/components/hero-background";
+import { Link } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   const t = useTranslations("home.hero");
@@ -34,12 +36,15 @@ export function HeroSection() {
             />
             {t("primaryCta")}
           </Button>
-          <Button
-            variant="outline"
-            className="h-11 w-full min-w-[197px] sm:w-[197px]"
+          <Link
+            href="/#how-it-works"
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "h-11 w-full min-w-[197px] sm:w-[197px]",
+            )}
           >
             {t("secondaryCta")}
-          </Button>
+          </Link>
         </div>
       </div>
     </section>

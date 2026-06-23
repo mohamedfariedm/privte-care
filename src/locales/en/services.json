@@ -1,0 +1,56 @@
+{
+  "title": "Services — Private Care Laundry",
+  "description": "Explore our full range of laundry and specialty cleaning services.",
+  "hero": {
+    "title": "Services",
+    "subtitle": "Premium laundry care designed around your lifestyle."
+  },
+  "knowPrices": "Know Prices",
+  "items": {
+    "savingBags": {
+      "title": "Saving Bags",
+      "description": "Fill a bag with up to 15 items for one fixed price — a convenient and cost-effective solution for regular laundry. Enjoy premium care while saving more with every order."
+    },
+    "clothesWashing": {
+      "title": "Cloths Washing",
+      "description": "Your daily wear cleaned with expert care using high-quality processes. Each order is handled separately to ensure freshness, hygiene, and a perfect finish."
+    },
+    "shoeCleaning": {
+      "title": "Shoe Cleaning",
+      "description": "Specialized cleaning designed to restore your shoes' original look and feel. We treat each pair with care, preserving materials while removing dirt and stains."
+    },
+    "bagsCleaning": {
+      "title": "Bags Cleaning",
+      "description": "From handbags to travel bags, we provide gentle yet effective cleaning. Maintain the elegance and longevity of your bags with our expert care."
+    },
+    "carpetCleaning": {
+      "title": "Carpet Cleaning",
+      "description": "Deep and thorough cleaning that removes dust, stains, and odors. Bring back the comfort, cleanliness, and freshness of your carpets."
+    },
+    "homeItems": {
+      "title": "Home Items",
+      "description": "Professional care for curtains, blankets, and other home essentials. Keep your living space fresh, soft, and well-maintained with ease."
+    }
+  },
+  "audience": {
+    "title": "Who is our services for?",
+    "items": {
+      "corporate": {
+        "title": "Corporate Professionals",
+        "description": "Reliable, discreet service that keeps your wardrobe ready for every meeting and trip"
+      },
+      "traditional": {
+        "title": "Traditional Wear Users",
+        "description": "Specialized care that preserves the elegance and integrity of traditional garments"
+      },
+      "families": {
+        "title": "Busy Families",
+        "description": "Effortless laundry care that keeps every outfit clean, fresh, and always ready"
+      },
+      "enthusiasts": {
+        "title": "Garment Care Enthusiasts",
+        "description": "For those who value quality and longevity — keeping fabrics in their best condition"
+      }
+    }
+  }
+}

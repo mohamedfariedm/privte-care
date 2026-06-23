@@ -61,7 +61,7 @@ export default async function LocaleLayout({
         } antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <div className="grid-lines min-h-screen">
+          <div className="min-h-screen">
             <SiteHeader />
             <main>{children}</main>
             <SiteFooter />

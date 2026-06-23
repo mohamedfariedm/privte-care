@@ -11,13 +11,15 @@ export function HomePageContent() {
   return (
     <>
       <HeroSection />
-      <AppPromoSection />
-      <ServicesSection />
-      <HowItWorksSection />
-      <WhySection />
-      <TestimonialsSection />
-      <DownloadAppSection />
-      <FaqSection />
+      <div className="grid-lines">
+        <AppPromoSection />
+        <ServicesSection />
+        <HowItWorksSection />
+        <WhySection />
+        <TestimonialsSection />
+        <DownloadAppSection />
+        <FaqSection />
+      </div>
     </>
   );
 }

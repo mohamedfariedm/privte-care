@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -11,25 +12,46 @@ export function TestimonialsSection() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="section-border-b py-16 md:py-24">
+    <section id="testimonials" className="section-border-b py-[120px]">
       <div className="container-page">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-6 text-sm uppercase tracking-[0.2em] text-text-extra-strong">
-            {t("label")}
-          </p>
-          <blockquote className="font-serif text-2xl leading-relaxed text-text-default md:text-4xl md:leading-[64px]">
-            {t("quote")}
-          </blockquote>
+        <div className="mx-auto flex max-w-[846px] flex-col items-center gap-14 text-center">
+          <div className="flex w-full flex-col items-center gap-8">
+            <p className="font-serif text-2xl font-light italic text-text-default">
+              {t("label")}
+            </p>
 
-          <div className="mx-auto mt-10 flex max-w-xs flex-col items-center gap-4">
-            <div className="h-14 w-14 rounded-full bg-background-secondary" aria-hidden />
-            <div>
-              <p className="text-lg text-text-default">{t("author")}</p>
-              <p className="text-sm text-text-strong">{t("role")}</p>
+            <blockquote className="font-serif text-2xl leading-8 text-text-default">
+              {t("quote")}
+            </blockquote>
+
+            <div className="rounded-lg border border-border-muted-2 px-6 py-[18px]">
+              <div className="flex flex-col items-center gap-4">
+                <div className="relative size-[54px] overflow-hidden rounded-full border border-black/10">
+                  <Image
+                    src="/images/testimonials/avatar.png"
+                    alt=""
+                    fill
+                    className="object-cover"
+                    sizes="54px"
+                  />
+                </div>
+                <div>
+                  <p className="font-serif text-xl italic leading-[30px] text-text-default">
+                    {t("author")}
+                  </p>
+                  <p className="font-serif text-base leading-[22px] text-text-extra-strong">
+                    {t("role")}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-3" role="tablist" aria-label={t("label")}>
+          <div
+            className="flex w-[152px] items-center justify-center gap-4"
+            role="tablist"
+            aria-label={t("label")}
+          >
             {dots.map((index) => (
               <button
                 key={index}
@@ -37,8 +59,10 @@ export function TestimonialsSection() {
                 role="tab"
                 aria-selected={active === index}
                 className={cn(
-                  "h-2 rounded-full transition-all",
-                  active === index ? "w-6 bg-button-cta" : "w-2 bg-border-muted",
+                  "h-2 flex-1 rounded-full transition-all",
+                  active === index
+                    ? "bg-button-cta"
+                    : "border border-border-muted-2 bg-transparent",
                 )}
                 onClick={() => setActive(index)}
               />

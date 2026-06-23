@@ -1,0 +1,24 @@
+{
+  "title": "الأسعار — بريفيت كير للغسيل",
+  "description": "أسعار شفافة لخدمات الغسيل الفاخرة في الإمارات.",
+  "hero": {
+    "title": "الأسعار",
+    "subtitle": "أسعار واضحة ومسبقة لكل خدمة."
+  },
+  "filters": {
+    "all": "الكل",
+    "men": "رجال",
+    "women": "نساء",
+    "children": "أطفال"
+  },
+  "categories": {
+    "cleanPress": { "title": "تنظيف وكي" },
+    "washFold": { "title": "غسيل وطي" },
+    "pressOnly": { "title": "كي فقط" },
+    "shoeCleaning": { "title": "تنظيف الأحذية" },
+    "bagsCleaning": { "title": "تنظيف الحقائب" },
+    "homeItems": { "title": "مستلزمات المنزل" },
+    "carpetCleaning": { "title": "تنظيف السجاد" },
+    "savingBags": { "title": "أكياس التوفير" }
+  }
+}

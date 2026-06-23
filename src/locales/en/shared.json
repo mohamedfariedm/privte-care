@@ -1,0 +1,20 @@
+{
+  "shared": {
+    "careFeatures": {
+      "items": {
+        "quality": {
+          "title": "Four simple steps to fresh & clean.",
+          "description": "Garments are cleaned based on fabric type for quality."
+        },
+        "airDry": {
+          "title": "Air Dry Technology.",
+          "description": "Natural drying preserves fabric texture and color without heat damage."
+        },
+        "steamPress": {
+          "title": "Steam Press Finish.",
+          "description": "Steam pressing gives a polished look without damaging fabric."
+        }
+      }
+    }
+  }
+}

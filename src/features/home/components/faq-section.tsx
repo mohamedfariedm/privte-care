@@ -13,10 +13,10 @@ export function FaqSection() {
   }));
 
   return (
-    <section className="section-border-b py-16 md:py-24">
+    <section className="section-border-b py-10 md:py-[40px]">
       <div className="container-page">
-        <div className="grid gap-10 lg:grid-cols-[426px_1fr] lg:gap-24">
-          <h2 className="font-serif text-3xl leading-tight text-text-default md:text-5xl md:leading-[52px]">
+        <div className="mx-auto grid max-w-[1174px] gap-10 lg:grid-cols-[426px_1fr] lg:gap-[120px]">
+          <h2 className="font-serif text-[48px] leading-[52px] text-text-default">
             {t("title")}
           </h2>
           <Accordion items={items} defaultOpenId="separate" />

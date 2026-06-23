@@ -54,6 +54,7 @@ html {
 body {
   background: var(--background-base);
   color: var(--text-default);
+  overflow-x:  hidden;
   font-family: var(--font-poppins), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -70,16 +71,37 @@ body {
   padding-inline: var(--grid-line-offset);
 }
 
-.section-border-y {
-  border-block: 1px solid var(--border-muted);
+.section-border-y,
+.section-border-b {
+  position: relative;
 }
 
-.section-border-b {
-  border-block-end: 1px solid var(--border-muted);
+.section-border-y::before,
+.section-border-y::after,
+.section-border-b::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  transform: translateX(-50%);
+  background: var(--border-muted);
+  pointer-events: none;
+}
+
+.section-border-y::before {
+  top: 0;
+}
+
+.section-border-y::after,
+.section-border-b::after {
+  bottom: 0;
 }
 
 .grid-lines {
   position: relative;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .grid-lines::before,

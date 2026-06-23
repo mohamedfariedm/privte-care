@@ -1,0 +1,55 @@
+{
+  "common": {
+    "brand": "Private Care",
+    "knowMore": "Know More",
+    "availableNow": "Available now",
+    "appStore": "App Store",
+    "playStore": "Play Store",
+    "bookNow": "Book Now",
+    "ourServices": "Our Services",
+    "learnMore": "Learn More"
+  },
+  "nav": {
+    "home": "Home",
+    "prices": "Prices",
+    "services": "Services",
+    "about": "About",
+    "help": "Help",
+    "bookPickup": "Download App",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "Private Care Laundry — where every item is washed separately with precision, privacy, and premium care.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "quickLinksList": {
+      "services": "Services",
+      "howItWorks": "How It Works",
+      "reviews": "Reviews",
+      "downloadApp": "Download App"
+    },
+    "servicesList": {
+      "washFold": "Wash & Fold",
+      "dryCleaning": "Dry Cleaning",
+      "ironing": "Ironing",
+      "express": "Express Service"
+    },
+    "contact": {
+      "location": "Dubai, UAE",
+      "phone": "+971 4 123 4567",
+      "email": "hello@PCL.com"
+    },
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "copyright": "© {year} Private Care Laundry. All rights reserved."
+  },
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "switch": "Language"
+  }
+}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { PlaceholderPage } from "@/components/shared/placeholder-page";
+import { AboutPageContent } from "@/features/about/components/about-page-content";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("pages.about");
@@ -8,5 +8,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function AboutPage() {
-  return <PlaceholderPage namespace="about" />;
+  return <AboutPageContent />;
 }

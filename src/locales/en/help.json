@@ -1,0 +1,27 @@
+{
+  "title": "Help — Private Care Laundry",
+  "description": "Get answers and support for your Private Care Laundry experience.",
+  "hero": {
+    "title": "Help Center",
+    "subtitle": "How Can we help you today?"
+  },
+  "contact": {
+    "items": {
+      "email": {
+        "label": "Drop us an email at",
+        "value": "hello@PCL.com",
+        "note": "Reply within 2 hours"
+      },
+      "whatsapp": {
+        "label": "WhatsApp us at",
+        "value": "+971 4 123 4567",
+        "note": "Available 24/7"
+      },
+      "phone": {
+        "label": "Give us a call",
+        "value": "+971 4 123 4567",
+        "note": "Sun–Thu, 9am–6pm"
+      }
+    }
+  }
+}

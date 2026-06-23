@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
+import { BrandLogo } from "@/components/shared/brand-logo";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { cn } from "@/lib/utils";
@@ -31,14 +31,7 @@ export function SiteHeader() {
           className="relative z-10 justify-self-start"
           aria-label={tCommon("brand")}
         >
-          <Image
-            src="/images/logo.svg"
-            alt=""
-            width={85}
-            height={115}
-            className="h-16 w-auto md:h-[115px] md:w-[85px]"
-            priority
-          />
+          <BrandLogo priority />
         </Link>
 
         <nav
