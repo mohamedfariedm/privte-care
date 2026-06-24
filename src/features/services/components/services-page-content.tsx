@@ -10,24 +10,23 @@ import { ServicesDetailSection } from "@/features/services/components/services-d
 
 export function ServicesPageContent() {
   const t = useTranslations("pages.services");
-  const tCommon = useTranslations("common");
+  const tNav = useTranslations("nav");
 
   return (
-    <>
+    <PageGridLayout>
       <PageHero
+        variant="services"
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
         showCta
-        ctaLabel={tCommon("bookNow")}
+        ctaLabel={tNav("bookPickup")}
       />
-      <PageGridLayout>
-        <ServicesDetailSection />
-        <HowItWorksHorizontal />
-        <AudienceSection />
-        <TestimonialsSection />
-        <DownloadAppSection />
-        <FaqSection />
-      </PageGridLayout>
-    </>
+      <ServicesDetailSection />
+      <HowItWorksHorizontal />
+      <AudienceSection />
+      <TestimonialsSection />
+      <DownloadAppSection />
+      <FaqSection />
+    </PageGridLayout>
   );
 }

@@ -10,24 +10,23 @@ import { WhySection } from "@/features/home/components/why-section";
 
 export function AboutPageContent() {
   const t = useTranslations("pages.about");
-  const tCommon = useTranslations("common");
+  const tNav = useTranslations("nav");
 
   return (
-    <>
+    <PageGridLayout>
       <PageHero
+        variant="about"
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
         showCta
-        ctaLabel={tCommon("bookNow")}
+        ctaLabel={tNav("bookPickup")}
       />
-      <PageGridLayout>
-        <CareFeaturesSection />
-        <AppPromoSection />
-        <HowItWorksHorizontal />
-        <WhySection />
-        <TestimonialsSection />
-        <DownloadAppSection />
-      </PageGridLayout>
-    </>
+      <CareFeaturesSection />
+      <AppPromoSection />
+      <HowItWorksHorizontal />
+      <WhySection />
+      <TestimonialsSection />
+      <DownloadAppSection />
+    </PageGridLayout>
   );
 }

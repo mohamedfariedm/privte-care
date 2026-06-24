@@ -11,7 +11,8 @@ export function HomePageContent() {
   return (
     <>
       <HeroSection />
-      <div className="grid-lines">
+      <div className="grid-lines ">
+        <div className="mt-[65px]"></div>
         <AppPromoSection />
         <ServicesSection />
         <HowItWorksSection />

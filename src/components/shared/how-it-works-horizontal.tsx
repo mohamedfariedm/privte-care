@@ -2,10 +2,10 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const steps = [
-  { key: "schedule", icon: "/images/how-it-works/icon-schedule.png", number: "01" },
-  { key: "pickup", icon: "/images/how-it-works/icon-pickup.png", number: "02" },
-  { key: "delivery", icon: "/images/how-it-works/icon-delivery.png", number: "03" },
-  { key: "clean", icon: "/images/how-it-works/icon-clean.png", number: "04" },
+  { key: "schedule", icon: "/images/how-it-works/icon-schedule.svg", number: "01" },
+  { key: "pickup", icon: "/images/how-it-works/icon-pickup.svg", number: "02" },
+  { key: "delivery", icon: "/images/how-it-works/icon-delivery.svg", number: "03" },
+  { key: "clean", icon: "/images/how-it-works/icon-clean.svg", number: "04" },
 ] as const;
 
 type HowItWorksHorizontalProps = {
@@ -28,7 +28,7 @@ export function HowItWorksHorizontal({ label, title }: HowItWorksHorizontalProps
           </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4 px-6">
           {steps.map((step) => (
             <article
               key={step.key}

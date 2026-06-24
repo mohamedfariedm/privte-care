@@ -47,16 +47,16 @@ export function ServicesSection() {
   return (
     <section className="section-border-b py-20 md:mt-[140px] md:pb-0">
       <div className="container-page space-y-20">
-        <div className="grid gap-8 lg:grid-cols-[1fr_430px] lg:items-start lg:justify-between">
+        <div className="grid gap-8 lg:grid-cols-[1fr_430px] lg:items-start lg:justify-between px-[40px]">
           <h2 className="font-serif text-[48px] leading-[60px] text-text-default">
             {t("title")}
           </h2>
-          <p className="font-serif text-xl leading-[30px] text-text-strong lg:text-end">
+          <p className="font-serif text-xl leading-[30px]">
             {t("description")}
           </p>
         </div>
 
-        <div className="grid gap-px overflow-hidden rounded-lg border border-border-muted-2 bg-border-muted-2 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-px overflow-hidden border border-border-muted-2 bg-border-muted-2 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <article
               key={service.key}

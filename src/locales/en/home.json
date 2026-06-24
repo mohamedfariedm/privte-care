@@ -18,7 +18,7 @@
     },
     "services": {
       "title": "Our Services",
-      "description": "Every request is handled with utmost care and individually, to ensure the highest levels of privacy.",
+      "description": "Every request is handled with utmost care and\nindividually, to ensure the highest level of privacy.",
       "items": {
         "savingBags": {
           "title": "Saving Bags",

@@ -9,24 +9,24 @@ export function DownloadAppSection() {
     <section id="download" className="section-border-b py-20 md:mt-[100px] md:pb-[80px]">
       <div className="container-page">
         <div className="mx-auto grid max-w-[945px] items-center gap-12 lg:grid-cols-[411px_346px] lg:justify-between lg:gap-[188px]">
-          <div className="space-y-10">
-            <div className="space-y-4 text-center lg:text-start">
+          <div className="flex w-full max-w-[411px] flex-col gap-10">
+            <div className="flex flex-col gap-4 text-center">
               <h2 className="font-serif text-[48px] leading-[60px] text-text-default">
                 {t("title")}
               </h2>
-              <p className="font-serif text-xl leading-[30px] text-text-strong">
+              <p className="font-serif text-xl leading-[30px] text-text-default">
                 {t("description")}
               </p>
             </div>
 
             <div className="flex flex-wrap items-end gap-3">
-              <div className="w-full max-w-[407px] rounded-lg border border-border-muted p-4">
-                <div className="flex items-center justify-between gap-4">
-                  <div>
+              <div className="w-full rounded-xl border border-border-muted px-4 py-3 lg:w-[407px]">
+                <div className="flex items-center gap-4">
+                  <div className="flex min-w-0 flex-1 flex-col gap-[5px]">
                     <p className="font-serif text-2xl leading-8 text-text-default">
                       {t("scanTitle")}
                     </p>
-                    <p className="font-serif text-lg leading-[26px] text-text-strong">
+                    <p className="font-serif text-lg leading-[26px] text-text-default">
                       {t("scanSubtitle")}
                     </p>
                   </div>
@@ -41,7 +41,7 @@ export function DownloadAppSection() {
                 </div>
               </div>
 
-              <AppStoreButtons className="w-full" />
+              <AppStoreButtons size="md" variant="default" />
             </div>
           </div>
 

@@ -8,18 +8,20 @@ export function PricesPageContent() {
   const t = useTranslations("pages.prices");
 
   return (
-    <>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} />
-      <PageGridLayout>
-        <section className="section-border-b py-20 md:py-[100px]">
-          <div className="container-page">
-            <div className="mx-auto max-w-[1062px]">
-              <PricingCategories />
-            </div>
+    <PageGridLayout>
+      <PageHero
+        variant="prices"
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+      />
+      <section className="section-border-b py-20 md:py-[100px]">
+        <div className="container-page">
+          <div className="mx-auto max-w-[1062px]">
+            <PricingCategories />
           </div>
-        </section>
-        <DownloadAppSection />
-      </PageGridLayout>
-    </>
+        </div>
+      </section>
+      <DownloadAppSection />
+    </PageGridLayout>
   );
 }

@@ -19,23 +19,30 @@ export function HelpPageContent() {
   }));
 
   return (
-    <>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} />
-      <PageGridLayout>
-        <ContactOptionsSection />
-        <CareFeaturesSection />
-        <section className="section-border-b py-10 md:py-[40px]">
-          <div className="container-page">
-            <div className="mx-auto grid max-w-[1174px] gap-10 lg:grid-cols-[426px_1fr] lg:gap-[120px]">
-              <h2 className="font-serif text-[40px] leading-[52px] text-text-default">
-                {tFaq("title")}
-              </h2>
-              <Accordion items={faqItems} defaultOpenId="separate" variant="gold" />
-            </div>
+    <PageGridLayout>
+      <PageHero
+        variant="about"
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+      />
+      <ContactOptionsSection />
+      <CareFeaturesSection />
+      <section className="section-border-b">
+        <div className="container-page pb-20 pt-10 md:pt-[40px]">
+          <div className="mx-auto flex w-full max-w-[1174px] flex-col items-start gap-10 lg:flex-row lg:gap-[120px]">
+            <h2 className="w-full shrink-0 font-serif text-[40px] leading-[52px] text-text-default lg:w-[426px]">
+              {tFaq("title")}
+            </h2>
+            <Accordion
+              items={faqItems}
+              defaultOpenId="separate"
+              variant="gold"
+              className="w-full shrink-0 lg:w-[628px]"
+            />
           </div>
-        </section>
-        <DownloadAppSection />
-      </PageGridLayout>
-    </>
+        </div>
+      </section>
+      <DownloadAppSection />
+    </PageGridLayout>
   );
 }

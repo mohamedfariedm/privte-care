@@ -8,6 +8,7 @@ import { BrandLogo } from "@/components/shared/brand-logo";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const navItems = [
   { href: "/", key: "home" },
@@ -25,7 +26,9 @@ export function SiteHeader() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <div className="container-page grid grid-cols-[auto_1fr_auto] items-center gap-4 py-6 md:grid-cols-[1fr_auto_1fr]">
+      <div className="container-page grid grid-cols-[auto_1fr_auto] items-center gap-4 py-6 md:grid-cols-[1fr_auto_1fr]"
+      style={{maxWidth: "1360px"}}
+      >
         <Link
           href="/"
           className="relative z-10 justify-self-start"
@@ -58,7 +61,16 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center justify-self-end md:flex">
-          <Button className="h-11 w-[197px]">{t("bookPickup")}</Button>
+          <Button className="h-11 w-[197px]">
+            <Image
+              src="/images/icons/download.png"
+              alt=""
+              width={20}
+              height={20}
+              className="h-5 w-5 shrink-0"
+              aria-hidden
+            />
+            {t("bookPickup")}</Button>
         </div>
 
         <button

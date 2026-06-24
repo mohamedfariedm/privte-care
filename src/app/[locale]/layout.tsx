@@ -1,4 +1,5 @@
-import { Newsreader, Noto_Sans_Arabic, Poppins } from "next/font/google";
+import localFont from "next/font/local";
+import { Noto_Sans_Arabic, Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -16,9 +17,29 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+const newsreader = localFont({
+  src: [
+    {
+      path: "../../assets/fonts/newsreader/newsreader-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/newsreader/newsreader-latin-400-italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../../assets/fonts/newsreader/newsreader-latin-500-normal.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../assets/fonts/newsreader/newsreader-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
   variable: "--font-newsreader",
   display: "swap",
 });
@@ -64,7 +85,9 @@ export default async function LocaleLayout({
           <div className="min-h-screen">
             <SiteHeader />
             <main>{children}</main>
+            <div className="grid-lines">
             <SiteFooter />
+            </div>
           </div>
         </NextIntlClientProvider>
       </body>

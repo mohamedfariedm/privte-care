@@ -8,9 +8,9 @@ export function AppPromoSection() {
   return (
     <section className="section-border-y">
       <div className="container-page grid min-h-[670px] items-center py-12 lg:grid-cols-2 lg:justify-between lg:gap-[124px] lg:py-0">
-        <div className="relative mx-auto aspect-[680/670] w-full max-w-[680px] lg:mx-0 lg:h-[670px] lg:max-w-none">
+        <div className="relative mx-auto aspect-[680/670] max-w-[680px] lg:mx-0 lg:h-[670px] lg:max-w-none w-[680px]">
           <Image
-            src="/images/app-promo/phone-mockup.png"
+            src="/images/app-promo/FreeiPhoneAirMockuponRock.svg"
             alt=""
             fill
             className="object-cover opacity-90"
@@ -24,7 +24,7 @@ export function AppPromoSection() {
             <h2 className="font-serif text-[48px] leading-[60px] text-text-default">
               {t("title")}
             </h2>
-            <p className="font-serif text-xl leading-[30px] text-text-strong">
+            <p className="font-serif text-xl leading-[30px] text-text-extra-strong">
               {t("description")}
             </p>
           </div>
