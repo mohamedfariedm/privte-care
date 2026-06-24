@@ -45,7 +45,7 @@ export function ServicesSection() {
   const tCommon = useTranslations("common");
 
   return (
-    <section className="section-border-b py-20 md:pt-[140px] md:pb-20">
+    <section className="section-border-b py-20 md:mt-[140px] md:pb-0">
       <div className="container-page space-y-20">
         <div className="grid gap-8 lg:grid-cols-[1fr_430px] lg:items-start lg:justify-between">
           <h2 className="font-serif text-[48px] leading-[60px] text-text-default">

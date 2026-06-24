@@ -6,7 +6,7 @@ export function DownloadAppSection() {
   const t = useTranslations("home.download");
 
   return (
-    <section id="download" className="section-border-b py-20 md:py-[100px]">
+    <section id="download" className="section-border-b py-20 md:mt-[100px] md:pb-[80px]">
       <div className="container-page">
         <div className="mx-auto grid max-w-[945px] items-center gap-12 lg:grid-cols-[411px_346px] lg:justify-between lg:gap-[188px]">
           <div className="space-y-10">

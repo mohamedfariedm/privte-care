@@ -12,7 +12,7 @@ export function WhySection() {
   const t = useTranslations("home.why");
 
   return (
-    <section className="section-border-b py-20 md:py-[120px]">
+    <section className="section-border-b py-20 md:mt-[120px] md:pb-[100px]">
       <div className="container-page space-y-20">
         <div className="mx-auto flex max-w-[576px] flex-col items-center gap-6 text-center">
           <h2 className="font-serif text-[48px] leading-[60px] text-text-default">

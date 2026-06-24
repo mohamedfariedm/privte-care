@@ -21,6 +21,21 @@ $assets = @{
   "footer\icon-snapchat.png"     = "4c88c4b6-cdae-4f41-9490-f852db488148"
   "footer\icon-facebook.png"     = "63f9c710-19df-4be0-9556-4de2269be343"
   "footer\icon-twitter.png"      = "32111026-bf65-4de6-8965-9e519edd7938"
+  "prices\categories\icon-wash-fold.svg" = "c40a47ba71abe2aff9b793b77c032817e02eae04"
+  "prices\categories\icon-shoes.svg"     = "6cc298d7865e8114987ca27478b8baf487b11207"
+  "prices\categories\icon-bag.svg"       = "1210dda373eb2eb271d5b3a82e48c0380117bc30"
+  "prices\categories\icon-towels.svg"    = "bd0510fb4776c9dd999f2cad49ccf2f877564130"
+  "prices\categories\icon-carpet.svg"    = "e00af117a741937939339aff59028449327e0698"
+  "prices\categories\icon-saving-bag.svg" = "0ffc8c868397f7f841d5d168ea86e0ca00b76d81"
+  "prices\icon-arrow.svg"                = "1de186aef9cb55f8b3f75c87a34462c33217547e"
+  "prices\items\jeans.png"               = "ebe49cca23bb5193964d9e63d57f9584361960a4"
+  "prices\items\tank-top.png"            = "c9afb5753de0b2157be54720a9bcf7a840d51e3c"
+  "prices\items\suit-jacket.png"         = "2f304eb28231f0f6c8cb2754a1a1150b98fc268c"
+  "prices\items\socks.png"               = "4cafbee55048b6fd7934f09adc7c9c13b6b7ff65"
+  "prices\items\shorts.png"              = "5613fa287cfaaa4bdc5593816c9c33658f5289c7"
+  "prices\items\polo-shirt.png"          = "01db4d0dc5b0d58e37670ff05541271596f903c2"
+  "prices\items\hat.png"                 = "944801688e17ddb3e5837c0aa9c2a901b821a029"
+  "prices\items\vest.png"                = "99a6683b85f8e9039454f73ba742cf3255561119"
 }
 
 foreach ($rel in $assets.Keys) {
