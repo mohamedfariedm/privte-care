@@ -115,6 +115,13 @@ body {
   pointer-events: none;
 }
 
+@media (max-width: 767px) {
+  .grid-lines::before,
+  .grid-lines::after {
+    display: none;
+  }
+}
+
 .grid-lines::before {
   inset-inline-start: var(--grid-line-offset);
 }

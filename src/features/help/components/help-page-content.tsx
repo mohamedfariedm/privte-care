@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { CareFeaturesSection } from "@/components/shared/care-features-section";
 import { ContactOptionsSection } from "@/components/shared/contact-options-section";
 import { PageGridLayout } from "@/components/shared/page-grid-layout";
-import { PageHero } from "@/components/shared/page-hero";
+import { HelpHeroSection } from "@/features/help/components/help-hero-section";
 import { Accordion } from "@/components/ui/accordion";
 import { DownloadAppSection } from "@/features/home/components/download-app-section";
 
@@ -20,15 +20,13 @@ export function HelpPageContent() {
 
   return (
     <PageGridLayout>
-      <PageHero
-        variant="about"
+      <HelpHeroSection
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
       />
       <ContactOptionsSection />
-      <CareFeaturesSection />
       <section className="section-border-b">
-        <div className="container-page pb-20 pt-10 md:pt-[40px]">
+        <div className="container-page pb-20 pt-[120px]">
           <div className="mx-auto flex w-full max-w-[1174px] flex-col items-start gap-10 lg:flex-row lg:gap-[120px]">
             <h2 className="w-full shrink-0 font-serif text-[40px] leading-[52px] text-text-default lg:w-[426px]">
               {tFaq("title")}
@@ -42,6 +40,7 @@ export function HelpPageContent() {
           </div>
         </div>
       </section>
+      <CareFeaturesSection />
       <DownloadAppSection />
     </PageGridLayout>
   );

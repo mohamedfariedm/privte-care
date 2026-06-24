@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -56,7 +55,7 @@ export function PageHero({
 
   return (
     <section
-      className={cn("section-border-b relative h-[776px] overflow-hidden", className)}
+      className={cn("relative h-[776px] overflow-hidden", className)}
     >
       <div
         className={cn(
@@ -75,7 +74,7 @@ export function PageHero({
         />
       </div>
 
-      <div className="container-page relative flex h-full flex-col items-center justify-center pt-[120px] text-center">
+      <div className="container-page relative flex flex-col items-center pt-[298px] text-center">
         <div
           className={cn(
             "flex flex-col items-center gap-[26px]",
