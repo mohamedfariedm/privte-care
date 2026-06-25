@@ -65,9 +65,9 @@ export function AppStoreButtons({
   );
 
   const smButtonClass =
-    "h-[63px] shrink-0 items-center justify-center gap-2 px-5 py-2";
+    "h-[63px] shrink-0 items-center justify-center gap-2 px-5 py-2 duration-500 active:scale-[1.02]";
   const mdButtonClass =
-    "h-[141px] min-w-0 flex-1 flex-col items-start justify-between p-4";
+    "h-[141px] min-w-0 flex-1 flex-col items-start justify-between p-4 hover:scale-[1.02]";
 
   return (
     <div className={cn("flex gap-3", !isSm && "w-full", className)}>

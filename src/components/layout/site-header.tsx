@@ -3,7 +3,8 @@
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { Link, usePathname } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
+import { TransitionLink } from "@/components/layout/TransitionLink";
 import { BrandLogo } from "@/components/shared/brand-logo";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/shared/language-switcher";
@@ -29,13 +30,13 @@ export function SiteHeader() {
       <div className="container-page grid grid-cols-[auto_1fr_auto] items-center gap-4 py-6 md:grid-cols-[1fr_auto_1fr]"
       style={{maxWidth: "1360px"}}
       >
-        <Link
+        <TransitionLink
           href="/"
           className="relative z-10 justify-self-start"
           aria-label={tCommon("brand")}
         >
           <BrandLogo priority />
-        </Link>
+        </TransitionLink>
 
         <nav
           className="hidden items-center justify-center gap-10 md:flex"
@@ -45,7 +46,7 @@ export function SiteHeader() {
             const active = pathname === item.href;
 
             return (
-              <Link
+              <TransitionLink
                 key={item.key}
                 href={item.href}
                 className={cn(
@@ -55,7 +56,7 @@ export function SiteHeader() {
                 )}
               >
                 {t(item.key)}
-              </Link>
+              </TransitionLink>
             );
           })}
         </nav>
@@ -94,14 +95,14 @@ export function SiteHeader() {
       >
         <div className="container-page flex flex-col gap-4 py-6">
           {navItems.map((item) => (
-            <Link
+            <TransitionLink
               key={item.key}
               href={item.href}
               className="font-serif text-xl text-text-default"
               onClick={() => setOpen(false)}
             >
               {t(item.key)}
-            </Link>
+            </TransitionLink>
           ))}
           <LanguageSwitcher />
           <Button className="h-11 w-full">{t("bookPickup")}</Button>
